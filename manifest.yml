@@ -1,0 +1,25 @@
+display_information:
+  name: Dobby
+  description: Approves github pull requests
+  background_color: "#173b52"
+features:
+  bot_user:
+    display_name: Dobby
+    always_online: false
+  slash_commands:
+    - command: /dobby
+      url: https://example.com
+      description: Approves github pull requests
+      should_escape: false
+oauth_config:
+  scopes:
+    user:
+      - chat:write
+    bot:
+      - commands
+settings:
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
